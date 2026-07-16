@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">
+          <img src="image/logores.png" alt="company logo"> 
+            <span>ARC</span>
+        </a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="event.html">Parties/Events</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    
+    <section id="parties-container" class="parties-container">
+      <h1 class="title">Our Event Places</h1>
+      
+
+      <div class="parties-main-grid">
+            <div class="parties-place">
+              <h2>Venue</h2>
+
+              <div class="dropdown">
+                  <p class="dropdown-btn">Choose your place<span>&#8595;</span></p>
+
+                  <div class="dropdown-content">
+
+                    <!-- <a href="#" class="dropBtn active" onclick="showGrid('grid-birthday')">Tagaytay, Cavite</a> -->
+
+                     <!-- Tagaytay -->
+                    <div class="place">
+                      <!-- <a href="#" class="place-btn">Tagaytay, Cavite ▼</a> -->
+                        <a href="#" class="dropBtn active place-btn" onclick="showGrid('grid-birthday')">
+                          Tagaytay, Cavite<span class="arrow">▶</span>
+                        </a>
+
+                        <div class="submenu">
+                            <a href="#" onclick="showGrid('birthday-tagaytay')">Birthday Package</a>
+                            <a href="#" onclick="showGrid('wedding-tagaytay')">Wedding Package</a>
+                            <a href="#" onclick="showGrid('corporate-tagaytay')">Corporate Package</a>
+                            <a href="#" onclick="showGrid('buffet-tagaytay')">Buffet Package</a>
+                      </div>
+                    </div>
+                    
+                    <div class="place">
+                        <a href="#" class="dropBtn place-btn" onclick="showGrid('grid-wedding')">
+                          Nasugbu,Batangas<span class="arrow">▶</span>
+                        </a>
+
+                         <div class="submenu">
+                            <a href="#" onclick="showGrid('birthday-nasugbu')">Birthday Package</a>
+                            <a href="#" onclick="showGrid('wedding-nasugbu')">Wedding Package</a>
+                            <a href="#" onclick="showGrid('corporate-nasugbu')">Corporate Package</a>
+                        </div>
+                    </div>
+
+                    <div class="place">
+                        <a href="#" class="dropBtn place-btn" onclick="showGrid('grid-corporate')">
+                          Calamba,Laguna<span class="arrow">▶</span>
+                        </a>
+                        <div class="submenu">
+                            <a href="#" onclick="showGrid('birthday-calamba')">Birthday Package</a>
+                            <a href="#" onclick="showGrid('wedding-calamba')">Wedding Package</a>
+                        </div>
+                    </div>
+                    
+                    <div class="place">
+                      <a href="#" class="dropBtn place-btn" onclick="showGrid('grid-gathering')">
+                        Taytay, Rizal<span class="arrow">▶</span>
+                      </a>
+                      <div class="submenu">
+                            <a href="#" onclick="showGrid('birthday-calamba')">Birthday Package</a>
+                            <a href="#" onclick="showGrid('wedding-calamba')">Wedding Package</a>
+                        </div>
+                    </div>
+
+                    <div class="place">
+                        <a href="#" class="dropBtn place-btn" onclick="showGrid('grid-buffet')">
+                          Caliraya, Laguna<span class="arrow">▶</span></a>
+
+                          <div class="submenu">
+                            <a href="#" onclick="showGrid('birthday-calamba')">Birthday Package</a>
+                            <a href="#" onclick="showGrid('wedding-calamba')">Wedding Package</a>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+
+            </div>
+         
+            <!-- Birthday Venue-->
+            <div class="grid grid-birthday">
+              <div class="content-grid-right">
+                  <div class="parties-subcontainer"> 
+                      <img src="image/event/event1.png" class="img-event"alt="event place image">
+                  </div> 
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event2.png" class="img-event"alt="event place image">
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event3.png" class="img-event"alt="event place image">
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event4.png" class="img-event"alt="event place image">
+                  </div>
+              </div>
+            </div>
+
+            <!-- Wedding Venue -->
+            <div class="grid grid-wedding">
+              <div class="content-grid-right">
+                  <div class="parties-subcontainer"> 
+                      <img src="image/event/event9.png" class="img-event"alt="event place image">
+                      <!-- <p class="tilte">Tagaytay Wedding Caffe</p> -->
+                  </div> 
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event10.png" class="img-event"alt="event place image">
+                    <!-- <p>Boracay Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event7.png" class="img-event"alt="event place image">
+                    <!-- <p>Coron Samal Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event8.png" class="img-event"alt="event place image">
+                  </div>
+              </div>
+            </div>
+
+            <!-- Corporate Venue -->
+            <div class="grid grid-corporate">
+              <div class="content-grid-right">
+                  <div class="parties-subcontainer"> 
+                      <img src="image/event/event5.png" class="img-event"alt="event place image">
+                      <!-- <p class="tilte">Tagaytay Wedding Caffe</p> -->
+                  </div> 
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event6.png" class="img-event"alt="event place image">
+                    <!-- <p>Boracay Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event7.png" class="img-event"alt="event place image">
+                    <!-- <p>Coron Samal Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event8.png" class="img-event"alt="event place image">
+                  </div>
+              </div>
+            </div>
+
+            <!-- Gathering Venu -->
+            <div class="grid grid-gathering">
+              <div class="content-grid-right">
+                  <div class="parties-subcontainer"> 
+                      <img src="image/event/event4.png" class="img-event"alt="event place image">
+                      <!-- <p class="tilte">Tagaytay Wedding Caffe</p> -->
+                  </div> 
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event6.png" class="img-event"alt="event place image">
+                    <!-- <p>Boracay Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event2.png" class="img-event"alt="event place image">
+                    <!-- <p>Coron Samal Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event8.png" class="img-event"alt="event place image">
+                  </div>
+              </div>
+            </div>
+
+            <!-- Buffet Venu -->
+            <div class="grid grid-buffet">
+              <div class="content-grid-right">
+                  <div class="parties-subcontainer"> 
+                      <img src="image/event/event9.png" class="img-event"alt="event place image">
+                      <!-- <p>Tagaytay Wedding Caffe</p> -->
+                  </div> 
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event10.png" class="img-event"alt="event place image">
+                    <!-- <p>Boracay Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event11.png" class="img-event"alt="event place image">
+                    <!-- <p>Coron Samal Wedding Venue</p> -->
+                  </div>
+
+                  <div class="parties-subcontainer"> 
+                    <img src="image/event/event12.png" class="img-event"alt="event place image">
+                  </div>
+              </div>
+            </div>
+
+
+        </div> 
+    </section>
+
+
+    <!-- News Letter Subcribes -->
+    <section>
+      <div class="subcribes-news">
+        <div class="news-image" data-aos="zoom-in">
+          <img src="image/news.png" alt="news image subcribes newsletter">
+        </div>
+
+        <div class="news-input" data-aos="fade-down">
+          <h2>News Letter</h2>
+          <p>Subscribe our Newsletter</p>
+          <p class="promotion">To get latest updates, offers and promotions</p>
+           <div class="input-container">
+            <form action="">
+                <input
+                  type="email"
+                  placeholder="Email here"
+                  class="inputfield"
+                required>
+                <button class="subscribebtn">Subscribe</button>
+              </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+          <div class="home">
+            <a href="index.html">
+              <img src="image/logofooter.png" alt="logo restaurant" class="footer-logo">
+            </a>
+            <p>ARC is one of the most popular</p>
+            <p>Restaurant & special menu made</p>
+            <p>by our passionate chefs</p>
+          </div>
+          
+          <div class="hours">
+            <h2>HOURS</h2>
+            <p>Monday - Friday: 11:30AM - 10:00PM</p>
+            <p>Saturday: 10:00AM - 11:00PM</p>
+            <p>Sunday: 10:00AM - 9:00PM </p>
+          </div>
+          
+          <div class="socialmedia-icon">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i> </a>
+          </div>
+      </div> 
+       <p class="footer_copy">&#169; Abner Olivarez | All Rights Reserved 2025</p> 
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/event.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booktable.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="index.html">
+          <img src="image/logores.png" alt="company logo"> 
+            <span>ARC</span>
+        </a>        
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="event.html">Parties/Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+           </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+
+      <!-- ============Hero Section=================== -->
+    <section class="hero-table">
+      <div class="table-grid-container">
+
+          <div class="overlay"></div>
+            <div class="content-table">
+              <div class="table-title">
+                <p>Book your<strong> Experience</strong></p>
+                <h1>Reserve a Table</h1>
+                <p class="order-ahead">or Order Ahead </p>
+              </div>
+
+              <div class="table-details">
+                  <p>Choose your date, time, party size. Add an advance order</p>
+                  <p>and your meal will be timed perfect to your arrival.</p>
+              </div>
+
+                <div class="review-star-container">
+                    <div class="profile">
+                      <img src="image/profile1.jpg" alt="review image">
+                      <img src="image/profile2.jpg" alt="review image">
+                      <img src="image/profile3.jpg" alt="review image">
+                      <img src="image/profile4.jpg" alt="review image">
+                    </div>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <p>Reviews</p>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Booking Type  -->
+      </section>
+            <div class="booking-grid">
+              <div class="booking-type">
+                    <h1>Booking Type</h1>
+                  <form action="">
+                    <div class="btncontainer">
+                      <button class="bookingbtn dine-in">DINE-IN</button>
+                      <button class="bookingbtn pick-up">PICK UP</button>
+                    </div>
+
+                    <div class="date-container">
+                        <div class="date-input">
+                          <label for="">Date</label><br>
+                          <input type="date" name="date">
+                        </div>
+                        <div class="reservation-container">
+                            <label for="">Time</label><br>
+                            <select name="reservation_time" id="reservation_time" class="select-option" required>
+                              <option value="" disabled selected>Select Time</option>
+                              <option value="5:00pm - 6:00pm">5:00pm - 6:00 pm</option>
+                              <option value="6:00pm -7:00pm">6:00pm - 7:00 pm</option>
+                              <option value="7:00pm - 8:00pm">7:00pm - 8:00 pm</option>
+                              <option value="8:00pm - 9:00pm">8:00pm - 9:00 pm</option>
+                              <option value="9:00pm - 10:00pm">9:00pm - 10:00 pm</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="included-container">
+                        <p>Person/s</p><br>
+                        <span class="people active" data-value="1">1</span>
+                        <span class="people" data-value="2">2</span>
+                        <span class="people" data-value=3>3</span>
+                        <span class="people" data-value="4">4</span>
+                        <span class="people" data-value="5">5</span>
+                        <span class="people" data-value="6">6</span>
+                        <span class="people" data-value="7">7</span>
+                        <span class="people" data-value="8">8</span>
+                        <span class="people" data-value="9">9</span>
+                        <span class="people"data-value="10+">10+</span>
+                        
+                        <!-- Save the number of people here -->
+                        <input type="hidden" name="party_size" id="partySize">
+
+                    </div>
+
+                    <div class="personal-info-grid">
+                        <div>
+                          <label for="">First Name</label><br>
+                          <input type="text" name="firstname"placeholder="Mr. Juan" required>
+                        </div>
+                        <div>
+                          <label for="">Last Name</label><br>
+                          <input type="text" name="lastname" placeholder="Dela Cruz" required>
+                        </div>
+
+                        <div>
+                          <label for="">Email</label><br>
+                          <input type="text" name="email"  placeholder="juandelacruz@gmail.com" required>
+                        </div>
+
+                        <div class="phone">
+                          <label for="">Phone <span>(optional)</span></label><br>
+                          <input type="number" name="phone" placeholder="+63993-2220-123" required>
+                        </div>
+                    </div>
+
+                    <div class="advance-booking">
+                        <input type="radio" name="advance">
+                        <label for="">Add Advance Order</label>
+                        <p>Pre-select dishes from our menu. Your food will be timed perfectly to your arrival no-waiting</p>
+                    </div>
+
+                    <div class="text-booking">
+                      <label for="">Special Request <span>(optional)</span></label><br>
+                      <textarea name="message" id="" rows="3" cols="10" placeholder="Dietary restriction, occasion notes seating preferences...."></textarea>
+                    </div>
+
+                    <button class="advanceOrderbtn">Confirm Reservation</button>
+                    <p class="noteCancellation">No payment required. Cancellations accepted up to 2 hours before your booking.</p>
+                </form>
+              </div>
+
+
+              <div class="booking-image">
+
+                    <img src="image/booktype.jpg" alt="booking type image">
+
+                    <div class="opening-hours-container">
+                          <p class="openhours-title">OPENING HOURS</p>
+                          <div class="time-container">
+                              <div class="time-sched underline">
+                                  <p>Monday - Friday</p>
+                                  <p class="timer">11:30AM - 10:00PM</p>
+                              </div>
+
+                              <div class="time-sched underline">
+                                  <p>Saturday</p>
+                                  <p class="timer">10:00AM - 11:00PM</p>
+                              </div>
+
+                              <div class="time-sched">
+                                  <p>Sunday</p>
+                                  <p class="timer">10:00AM - 9:00PM</p>
+                              </div>
+
+                              <div class="">
+                                  <p class="contact-title">CONTACT</p>
+                                  <p>
+                                      <i class="fa-solid fa-square-phone contact-icon"></i> 0998-556-1234
+                                  </p>
+                                  <p>
+                                      <i class="fa-regular fa-envelope contact-icon"></i> arc@gmail.com
+                                  </p>
+                              </div>
+                              
+                                <p class="note">For parties of 10 or more, please call us directly to arrange a group booking with custom menus.</p>
+                              
+
+                          </div>
+                    </div>
+
+
+              </div>
+            </div>
+      
+
+    </section>
+
+
+    <!-- News Letter Subcribes -->
+    <section>
+      <div class="subcribes-news">
+          <div class="news-image" data-aos="zoom-in">
+            <img src="image/news.png" alt="news image subcribes newsletter">
+          </div>
+
+          <div class="news-input" data-aos="fade-down">
+            <h2>News Letter</h2>
+            <p>Subscribe our Newsletter</p>
+            <p class="promotion">To get latest updates, offers and promotions</p>
+            <div class="input-container">
+              <form action="">
+                  <input
+                    type="email"
+                    placeholder="Email here"
+                    class="inputfield"
+                  required>
+                  <button class="subscribebtn">Subscribe</button>
+                </form>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+
+      
+     
+
+      
+    <!-- Footer Section -->
+            <footer class="footer-container">
+               
+                <div class="footer-content">
+                  <div class="home">
+                    <a href="index.html">
+                      <img src="image/logofooter.png" alt="logo restaurant" class="footer-logo">
+                    </a>
+                    <p>ARC is one of the most popular</p>
+                    <p>Restaurant & special menu made</p>
+                    <p>by our passionate chefs</p>
+                  </div>
+                  
+                  <div class="hours">
+                    <h2>HOURS</h2>
+                    <p>Monday - Friday: 11:30AM - 10:00PM</p>
+                    <p>Saturday: 10:00AM - 11:00PM</p>
+                    <p>Sunday: 10:00AM - 9:00PM </p>
+                  </div>
+
+                  <div class="socialmedia-icon">
+                    <h3><em>Follow us</em></h3>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i> </a>
+                  </div>
+                </div> 
+
+                
+                    <p class="footer_copy">&#169; Abner Olivarez | All Rights Reserved 2025</p> 
+                
+              </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/book.js"></script>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+</body>
+</html>
