@@ -1,0 +1,354 @@
+/* Media  for Mobile Screen Set up  */
+@media screen and (max-width: 1169px){
+
+    .img-container{
+        margin-bottom: -2rem;
+    }
+   
+    .checkout{
+        font-size: .5rem;
+    }
+
+    .hero-section {
+        min-height: 80vh;
+        padding: 40px 20px;
+  }
+
+    .food-menu{
+        margin: 0 40px;
+  }
+
+
+  /* =====Event/Parties Section==== */
+
+  .parties-subcontainer .img-event{
+    width: 220px;
+}
+/* =================================== */
+
+
+
+/* ======Menu.html Section====== */
+  .testimonial-background{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+
+   .menu-left{
+    margin-left: 1rem;
+   }
+}
+/* ======================================= */
+
+/* ======Book Table Section===== */
+
+
+
+
+
+@media screen and (max-width: 980px){
+   
+    #cart-items li button{
+        font-size: .8rem;
+    }
+     
+     .subcribes-news{
+        flex-direction: column;
+    }
+
+    .parties-subcontainer .img-event{
+        max-width: 180px;
+    }
+
+    
+    .parties-place{
+        margin-bottom: 10rem;
+    }
+    .dropdown-content a{
+        font-size: .5rem;
+    }
+
+    .booking-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px){
+    .form-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-title h1{
+        text-align: center;
+    } 
+    
+    .form-title img{
+        width:100%;
+    }
+    .contact-container{
+        padding: 1rem;
+        width: 100%;
+    }
+
+     .menu-details-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        padding: 0 1.7rem;
+    }
+
+    /* ========Event Section========= */
+   .parties-subcontainer .img-event{
+        max-width: 170px;
+        
+    }
+
+    .parties-container .title{
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* ================================= */
+
+    
+    .cart-main-container{
+        margin-top: -3rem;
+    }
+
+    .hero-section {
+        min-height: 70vh;
+        padding: 60px 15px;
+        background-attachment: scroll; /* fixed backgrounds are poorly supported on mobile */
+  }
+     
+    .content-img{
+        margin-top: 5rem;
+        margin-bottom: -4rem;
+    }
+    .content-grid-right{
+        justify-content: center;
+        margin: auto;
+        padding: 1rem;
+       
+    }
+
+    .parties-main-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .content-grid-right{
+        flex-direction: row;
+    }
+
+    .subcribes-news{
+       padding: 2rem;
+        
+    }
+    .news-image img{
+        max-width: 350px;
+    }
+    .input-container{
+        margin-bottom: 3rem;
+    }
+
+    
+    .booking-grid{
+        width: 100%;
+        
+    }
+    .booking-image, .booking-grid{
+        padding: 1rem;
+        
+    }
+    .booking-image img{
+        width: 100%;
+    }
+
+    .allmenu-grid{
+       grid-template-columns: 1fr;
+    }
+
+    .menu-left{
+        display: flex;
+        margin: auto;
+        font-size: .8rem;
+    }
+    .menu-descript img{
+        width: 20px;
+        height: 20px;
+    }
+
+   .footer-container .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px){
+    .menu-details-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        padding: 0 1.7rem;
+    }
+    
+    .form-grid{
+        padding:1rem;
+    }
+
+     .form-title img{
+        max-width:90%;
+    }
+    
+    .content span{
+        font-size: 2;
+    }
+
+    #cart-items li button{
+        font-size: .4rem;
+    }
+    
+    .left-menu span{
+        text-align: center;
+    }
+
+    /* Menu html Section */
+    .test-content{
+        max-width: 350px;
+    }
+
+     .menu-left{
+        font-size: .5rem;
+        align-items: center;
+    }
+
+    .menu-descript img{
+        width: 10px;
+        height: 10px;
+    }
+
+/* =====Booking Table Section====== */
+    .table-title{
+        font-size: .9rem;
+        margin-top: 2rem;
+    }
+    .table-title .order-ahead{
+        font-size: 2rem;
+    }
+    .booking-grid{
+        max-width: 500px;
+    }
+    
+    .btncontainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dine-in{
+        margin-bottom: -2rem;
+    }
+
+    .pick-up{
+        margin-bottom: 1rem;
+    }
+
+    .btncontainer button{
+        width: 100%;
+    }
+
+    .date-container{
+        margin-bottom: 2rem;
+    }
+
+    .date-input{
+        margin-bottom: -2.5rem;
+    }
+
+    .personal-info-grid, .date-container{
+        grid-template-columns: 1fr;
+    }
+    .advanceOrderbtn{
+        width: 100%;
+    }
+    /* ======================================== */
+}
+
+
+@media screen and (max-width: 380px){  
+
+    .hero-section{
+        padding: 1rem;
+    }
+    .right-image img{
+        max-width: 250px;
+        
+    }
+
+    .left-menu{
+        width: 300px;
+        
+    }
+    
+/* =======Menu Section====== */
+
+    .img1{
+        width: 280px;
+        margin-right: .9rem;
+    }
+/* ============================ */
+
+
+/* =======Event Section======== */
+    .dropdown-content{
+        margin-bottom: 5rem;
+    }
+
+    .parties-container .title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .parties-subcontainer .img-event{
+        width: 110px;
+    }
+
+/* ============================== */
+    
+    .food-menu span{
+        font-size: .6rem;
+        margin: 0 6px;
+    }
+
+    .footer-container{
+        width: 100%;
+        padding: 1rem;
+   }
+
+    /* Menu html Section */
+    .test-content{
+        max-width: 280px;
+    }
+    .subcribes-news{
+        margin: auto;
+    }
+
+    .news-image img{
+        width: 300px;
+        margin-top:-1rem;
+}
+
+    
+    
+}
+
+
+
